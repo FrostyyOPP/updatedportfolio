@@ -1,0 +1,92 @@
+.project-section {
+  padding: 50px;
+  background-color: #f0f2f5; /* Match the background color to your theme */
+  color: #333; /* Main text color */
+}
+
+.project-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-subheading {
+  text-align: center;
+}
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 300px; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.project-image {
+  width: 100%;
+  display: block;
+}
+
+.project-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.project-description {
+  font-size: 14px;
+  padding: 0 15px;
+  color: #666; /* Description text color */
+}
+
+.project-tags {
+  padding: 10px 15px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #eee; /* Tag background color */
+  border-radius: 4px;
+  padding: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.project-links {
+  padding: 15px;
+  text-align: center;
+}
+.work-title {
+  background-color: rgb(225, 230, 236);
+  width: 80px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.work-subhead {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 30px;
+  line-height: 50px;
+  color: #08c26e;
+}
+
+.live-preview,
+.view-code {
+  text-decoration: none;
+  color: #007bff; /* Link color */
+  margin-right: 10px;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

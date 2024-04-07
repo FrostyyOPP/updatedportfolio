@@ -1,0 +1,83 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 80px; /* Adjusted padding */
+  background-color: #ecf1f4; /* Background color */
+}
+
+.hero-content {
+  max-width: 600px; /* Adjust width as necessary */
+}
+
+.hero-content h1 {
+  font-size: 3rem; /* Larger font size */
+  color: #333; /* Text color */
+  margin-bottom: 0.5em;
+}
+
+.hero-content p {
+  font-size: 1.5rem; /* Larger font size */
+  margin-bottom: 1em;
+}
+
+.cta-button {
+  background-color: #21bf73; /* Button color */
+  color: white;
+  border: none;
+  padding: 1em 2em; /* Larger padding */
+  border-radius: 30px; /* Rounded edges */
+  font-size: 1.25rem; /* Larger font size */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.robot-image {
+  /* Adjust width and height as necessary */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeholder-robot {
+  /* This represents the circle - replace with your image */
+
+  border-radius: 50%;
+  width: 400px; /* Circle size */
+  height: 400px;
+}
+
+/* Adjust the badge styles as necessary */
+.badge {
+  background-color: #21bf73; /* Badge background color */
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .robot-image {
+    width: 60%; /* Smaller width on smaller screens */
+    margin-top: 2em; /* Add some space above the image */
+  }
+
+  .hero-content,
+  .cta-button {
+    text-align: center;
+  }
+
+  .cta-button {
+    justify-content: center;
+  }
+}

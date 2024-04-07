@@ -1,0 +1,71 @@
+.container-skills {
+  max-width: 100%; /* Max width of the skills container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding around the content */
+  text-align: center; /* Center align text */
+  background-color: #f0f2f5; /* Match the background color to your theme */
+}
+
+.head-skills {
+  background-color: rgb(225, 230, 236);
+  width: 80px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.subhead-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-head-skills {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 30px;
+  line-height: 50px;
+  color: #08c26e;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Creates a 4-column layout */
+  gap: 20px; /* Space between grid items */
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Align items to the top of each cell vertically */
+}
+
+.skill-data {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center align items */
+}
+
+.data {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center align items */
+}
+
+.skill-img {
+  width: 50px; /* Width of the image */
+  height: 50px; /* Height of the image */
+  margin-bottom: 10px; /* Space between image and skill name */
+}
+
+.skill-name {
+  font-size: 16px; /* Font size for skill name */
+  color: #333; /* Text color for skill name */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .skills {
+    grid-template-columns: 1fr; /* 1 column on extra small screens */
+  }
+}

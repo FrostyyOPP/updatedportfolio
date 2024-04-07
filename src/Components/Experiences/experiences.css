@@ -1,0 +1,89 @@
+.accordion {
+  font-family: Arial, sans-serif;
+  display: block;
+  justify-content: center;
+}
+.exp-container {
+  background-color: #f0f2f5; /* Match the background color to your theme */
+}
+.exp-title {
+  background-color: rgb(225, 230, 236);
+  width: 80px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.exp-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exp-subtitle {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  line-height: 50px;
+  color: #08c26e;
+  text-align: center;
+}
+
+.accordion-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  min-width: 70vw;
+  margin-right: 25px;
+  margin-left: 25px;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.accordion-title {
+  padding: 15px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-title span {
+  font-weight: bold;
+}
+
+.accordion-content {
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.tags span {
+  background-color: #e4e4e4;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.exp-head {
+  display: flex;
+  gap: 50px;
+}
+.exp-body-head {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+.exp-location,
+.exp-site {
+  display: flex;
+  gap: 5px;
+}
+.exp-body-desc {
+  line-height: 40px;
+}
+
+/* You can add your colors, transitions, and other styles here */

@@ -1,0 +1,52 @@
+.footer {
+  background-color: #e6e7e8; /* Light grey background */
+  color: #333333; /* Dark text for contrast */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  font-family: Arial, sans-serif; /* Use your project's font */
+}
+
+.footer-logo {
+  width: 100px;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px; /* Spacing between icons */
+}
+
+.icon {
+  color: #fff; /* Icons color */
+  font-size: 24px; /* Adjust the size of the icons */
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #64ffda; /* Color when hovering over icons */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-info {
+    order: -1; /* Contact info above the name */
+    margin-bottom: 20px;
+  }
+
+  .footer-icons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

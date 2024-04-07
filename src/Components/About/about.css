@@ -1,0 +1,92 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Align items on opposite ends */
+  padding: 50px;
+  background-color: #fff; /* or any color based on your design */
+}
+
+.about-profile {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
+  background: rgba(59, 245, 2, 0.1); /* Semi-transparent white */
+  border-radius: 20px; /* Adjust as necessary for rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light white border for glass effect */
+  backdrop-filter: blur(10px); /* Creates the frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as necessary */
+  gap: 10px; /* Space between icons and text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-profile-img {
+  width: 300px; /* Adjust size as needed */
+  height: 300px; /* Adjust size as needed */
+  border-radius: 50%;
+  margin-bottom: 20px;
+  /* Replace with your image path */
+  background-image: url('path-to-your-profile-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.about-name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between icons */
+  margin-bottom: 20px; /* Space below icons */
+}
+
+.about-icon {
+  font-size: 24px; /* Size of icons */
+}
+
+.about-content {
+  max-width: 600px; /* Adjust width as needed */
+  padding-left: 50px; /* Space from the profile section */
+}
+
+.about-subtitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #08c26e;
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Add additional styles for text, icons, and overall layout as needed */
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 100%;
+    padding-left: 0; /* Remove padding on smaller screens */
+  }
+
+  .about-profile {
+    margin-bottom: 30px; /* Add space between profile and text */
+  }
+}

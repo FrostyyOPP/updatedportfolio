@@ -1,0 +1,69 @@
+.project-banner {
+  background: #0a192f; /* Dark blue background */
+  color: #8892b0; /* Lighter text color */
+  padding: 24px 48px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 40px;
+  min-width: 80%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+.project-container {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5; /* Match the background color to your theme */
+}
+.banner-content {
+  flex-grow: 1;
+}
+
+.banner-title {
+  color: #ccd6f6;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.banner-text {
+  font-size: 16px;
+  margin: 0;
+}
+
+.banner-button {
+  background-color: #64ffda; /* Mint green background */
+  color: #0a192f; /* Dark blue text */
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.banner-button:hover,
+.banner-button:focus {
+  background-color: #52d2a8; /* Darker shade of mint green for hover/focus */
+  outline: none;
+}
+
+.button-icon {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .project-banner {
+    flex-direction: column;
+  }
+
+  .banner-button {
+    padding: 12px 48px; /* Larger button on smaller screens */
+  }
+}

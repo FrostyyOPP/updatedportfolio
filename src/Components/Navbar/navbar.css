@@ -1,0 +1,118 @@
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 8rem; /* You might want to adjust this based on your actual logo size */
+}
+
+.navlinks {
+  display: flex;
+  gap: 20px;
+}
+
+.links:hover {
+  color: #08c26e;
+}
+
+.btn-contact {
+  background-color: #08c26e;
+  color: white;
+  padding: 5px 15px; /* Adjusted for better button sizing */
+  border: none; /* Add this if you don't want any border */
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer; /* Change the cursor to signify clickable */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-contact:hover {
+  background-color: #189ef8;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  /* For tablets */
+  .navlinks {
+    display: none; /* Hide nav links on smaller devices */
+  }
+
+  /* If you have a toggle menu icon, display it here */
+  .menu-icon {
+    display: block; /* Show menu icon */
+  }
+}
+
+@media (max-width: 768px) {
+  /* For mobile phones */
+  .bar {
+    padding: 0 15px; /* Reduced padding */
+  }
+
+  .logo {
+    width: 6rem; /* Smaller logo on mobile */
+  }
+
+  .btn-contact {
+    width: auto; /* Adjust width to content */
+    padding: 5px 10px; /* Smaller button on mobile */
+  }
+
+  /* If you have a toggle menu icon, adjust its size and display here */
+  .menu-icon {
+    display: block; /* Show menu icon */
+    /* Add size and other styles for the menu icon */
+  }
+}
+
+.mobile-menu-icon {
+  display: none; /* Hide by default, only show on mobile */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navlinks.active {
+  display: flex; /* Show nav links when active */
+}
+
+/* ... existing media queries ... */
+
+@media (max-width: 768px) {
+  /* ... existing styles ... */
+
+  .mobile-menu-icon {
+    display: block; /* Show the hamburger icon on mobile */
+  }
+
+  .navlinks {
+    flex-direction: column; /* Stack the links vertically */
+    position: absolute; /* Position it on top of other content */
+    top: 100%; /* Directly below the navbar */
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: none; /* Hidden by default, shown when the hamburger icon is clicked */
+  }
+
+  .navlinks.active {
+    display: flex; /* Show nav links when active */
+  }
+
+  .links {
+    display: block; /* Full-width links for easy clicking */
+    text-align: center;
+    padding: 15px; /* Add some padding for spacing */
+    border-bottom: 1px solid #f0f0f0; /* Separate the links visually */
+  }
+
+  .btn-contact {
+    display: none; /* Optional: Hide 'Contact Me' button on mobile if desired */
+  }
+}
